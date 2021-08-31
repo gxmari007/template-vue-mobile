@@ -1,5 +1,16 @@
 import { createApp } from 'vue';
+import roshan from 'roshan';
 
 import App from './app.vue';
+import { router } from './router';
+import { AppModule } from './home/module';
 
-createApp(App).mount('#app');
+const app = createApp(App);
+
+app.use(roshan, {
+  module: AppModule,
+  router,
+});
+app.use(router);
+
+app.mount('#app');

@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "roshan": "^0.0.7",
-    "vue": "^3.2.6"
+    "vue": "^3.2.6",
+    "vue-router": "^4.0.11"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
